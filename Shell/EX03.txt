@@ -1,0 +1,18 @@
+echo “enter basic salary”
+read bs
+hra=$(( $bs * 10 / 100 ))
+echo $hra
+ta=$(( $bs * 15 / 100 ))
+echo $ta
+da=$(( $bs * 2 / 100 ))
+echo $da
+tax=$(( $bs * 5 / 100 ))
+echo $tax
+pf=$(( $bs * 10 / 100 ))
+echo $pf
+add=$(( $hra + $ta + $da ))
+echo $add
+ded=$(( $tax + $pf ))
+echo $ded
+netsal=$(( $bs + $add - $ded ))
+echo "net salary is $netsal"

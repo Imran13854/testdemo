@@ -1,0 +1,10 @@
+echo "Enter a Year"
+read yr
+
+lpYr=$"$yr % 4"
+if [[ $lpYr -eq 0 ]]
+then
+echo "$yr is Leap Year"
+else
+echo "$yr is not Leap Year"
+fi

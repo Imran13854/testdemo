@@ -1,0 +1,21 @@
+echo "Enter a String"
+read str
+i=0
+space=0
+charr=0;
+
+len=${#str}
+while ((i<$len));do
+a=${str:i:1}
+if [[ $a == " " ]]
+then
+space=$(( $space + 1 ))
+
+else
+charr=$(( $charr + 1))
+
+fi
+((++i))
+done
+echo " Total charachter is: $charr"
+echo "Total space is: $space"

@@ -1,0 +1,19 @@
+echo "Enter a last number "
+read n
+a=0
+i=0
+b=1
+echo -n "$a "
+echo -n "$b"
+while [ $i -lt $n ]
+do
+c=$(( $a + $b ))
+if [ $c -gt $n ]
+then
+exit
+fi
+echo -n " $c "
+a=$b
+b=$c
+i=$(( $i + 1 ))
+done

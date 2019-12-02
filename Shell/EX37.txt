@@ -1,0 +1,22 @@
+echo "Enter students five subjects marks"
+read m1
+read m2
+read m3
+read m4
+read m5
+
+m=$(( $m1 +$m2 +$m3 +$m4 +$m5 ))
+per=$(( $m / 5 ))
+echo "$per"
+if [ $per -gt 60  ]
+then
+echo "First division"
+elif [ $per -gt 50 -a -$per -lt 60 ]
+then
+echo "Second division"
+elif [ $per -gt 40 -a -$per -lt 50 ]
+then
+echo "Third division"
+else
+echo "Faild"
+fi

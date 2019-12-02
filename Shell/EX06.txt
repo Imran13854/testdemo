@@ -1,0 +1,3 @@
+echo "Enter a String"
+read st
+echo "${#st} is the length of your string"

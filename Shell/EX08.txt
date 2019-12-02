@@ -1,0 +1,15 @@
+echo "Enter Product price"
+read pp
+if [ $pp -lt 1000 ]
+then
+tax=$(( $pp * 2 / 100 ))
+disc=$(( $pp * 10 / 100 ))
+else
+tax=$(( $pp * 5 / 100 ))
+disc=$(( $pp * 20 / 100 ))
+
+fi
+
+pa=$(( $pp + $tax - $disc ))
+
+echo "Ammount paid: $pa"

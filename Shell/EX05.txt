@@ -1,0 +1,13 @@
+echo -n "Enter a number: "
+read a
+echo -n "Enter another Number: "
+read b
+echo -n "Enter an operator: "
+read c
+case $c in
++)x=$(( $a + $b )) ;;
+-)x=$(( $a - $b )) ;;
+/)x=$(( $a / $b )) ;;
+*)x=$(( $a * $b )) ;;
+esac
+echo $x

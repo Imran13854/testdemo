@@ -1,0 +1,15 @@
+echo "Enter a String"
+read str
+echo "Enter a char to search position"
+read ch
+i=0
+
+len=${#str}
+while ((i<$len));do
+a=${str:i:1}
+if [[ $a == $ch ]]
+then
+echo "Position of '$ch' is  $i"
+fi
+((++i))
+done
